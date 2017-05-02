@@ -1,21 +1,21 @@
 import React from 'react'
 import Movie from './Movie'
 
-class MovieList extends React.Component{
+const MovieList = (props) => {
 
-render(){
 
-  const movieNodes = this.props.data.map((movie)=>{
+
+  const movieNodes = props.data.map((movie)=>{
     return(
       <Movie title={movie.title} key = {movie.id}>
       </Movie>
-      )
+      ) 
   })
-  return 
+  return(
   <div className="movie-list">
   {movieNodes}
   </div>
-}
+  )
 
 }
 

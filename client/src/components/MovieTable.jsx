@@ -12,7 +12,10 @@ constructor(props){
 
 render(){
   return(
-  <div className="movie-table">UK Opening This Week</div>
+  <div className="movie-table">UK Opening This Week
+  <MovieList data={this.state.data}/></div>
+
+  
    )
   }
  }
