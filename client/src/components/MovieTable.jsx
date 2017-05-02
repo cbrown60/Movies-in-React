@@ -1,5 +1,6 @@
 import React from 'react'
 import MovieList from './MovieList.jsx'
+import ShowMoreButton from './ShowMoreButton.jsx'
 
 class MovieTable extends React.Component{
 
@@ -14,11 +15,8 @@ render(){
   return(
   <div className="movie-table">UK Opening This Week
   <MovieList data={this.state.data}/>
-  <button>Show more</button>
-  </div>
-
-
-  
+  <ShowMoreButton id='button'/>
+    </div>
    )
   }
  }
